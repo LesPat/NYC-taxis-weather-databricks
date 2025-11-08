@@ -9,3 +9,5 @@ Architecture consists of three layers: Bronze (Staging) -> Silver (Transformatio
 NYC yellow taxis data reference: https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page
 
 Weather data reference: https://dev.meteostat.net/python/
+
+Python -> S3 -> Databricks -> S3 / PowerBI
