@@ -11,3 +11,8 @@ NYC yellow taxis data reference: https://www.nyc.gov/site/tlc/about/tlc-trip-rec
 Weather data reference: https://dev.meteostat.net/python/
 
 Python -> S3 -> Databricks -> S3 / PowerBI
+
+Business metrics idea:
+- weather vs tips
+- distance vs tips
+- # of passangers vs tips
