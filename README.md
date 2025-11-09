@@ -15,4 +15,4 @@ Python -> S3 -> Databricks -> S3 / PowerBI
 Business metrics idea:
 - weather vs tips
 - distance vs tips
-- # of passangers vs tips
+- passangers count vs tips
