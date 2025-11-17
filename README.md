@@ -18,3 +18,4 @@ Business metrics idea:
 - passangers count vs tips
 - tips vs area
 - weather vs distance
+- time of day vs tips
