@@ -4,15 +4,30 @@ Techstack: AWS S3, Python, API, Databricks (PySpark, SQL), PowerBI
 
 Architecture consists of three layers: Bronze (Staging) -> Silver (Transformation) -> Gold (Business ready)
 
-<img width="794" height="368" alt="taxis_architecture_draft drawio" src="https://github.com/user-attachments/assets/ac9ce806-97f7-4934-b0cc-370553934450" />
-
-NYC yellow taxis data reference: https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page
-
-Weather data reference: https://dev.meteostat.net/python/
-
 Python -> S3 -> Databricks -> S3 / PowerBI
 
-Business metrics idea:
+<img width="895" height="368" alt="taxis_architecture_draft drawio" src="https://github.com/user-attachments/assets/8379ee33-bbe3-44fd-a124-cb5f1e127d35" />
+
+References:
+NYC yellow taxis data: https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page
+Weather data: https://dev.meteostat.net/python/
+
+Bronze layer tables:
+1. bronze_nyc_taxis_oct_dec_2024
+   Contains NYC yellow taxis fares from period of Oct '24 to Dec '24
+2. bronze_taxi_zone_lookup
+   Contains dictionary for NYC districts abbreviations
+3. bronze_weather_oct_dec_2024
+   Contains weather for NYC from period of Oct '24 to Dec '24
+
+Silver layer transformations and result tables:
+- Deleting records with irrelevant data (dates out of scope)
+- Joining NYC fares data with weather (date_trunc to full hours = hourly weather data)
+- Adding full area names for analysis
+
+Gold layer business-ready tables:
+
+Business metrics ideas:
 - weather vs tips
 - distance vs tips
 - passangers count vs tips
