@@ -15,6 +15,7 @@ nyc = Point(40.7143, -74.006, 57)
 # Get daily data for Oct - Dec 2024
 data = Hourly(nyc, start, end)
 data = data.fetch()
+data = data.reset_index()
 
 # Create CSV in memory
 csv_buffer = StringIO()
@@ -30,6 +31,6 @@ s3 = boto3.client(
 # Upload
 s3.put_object(
     Bucket="nyc-taxis-traffic-analysis-raw",
-    Key="weather/nyc_weather_oct_dec_2024.csv",
+    Key="weather/nyc_weather_oct_dec_2024_v2.csv",
     Body=csv_buffer.getvalue()
 )
