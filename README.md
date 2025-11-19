@@ -34,3 +34,4 @@ Business metrics ideas:
 - tips vs area
 - weather vs distance
 - time of day vs tips
+- ride duration vs tips
