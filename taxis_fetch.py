@@ -2,7 +2,9 @@ import requests
 import os
 import boto3
 
-urls = ['https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-12.parquet']
+urls = ['https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-10.parquet'
+        ,'https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-11.parquet'
+        ,'https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-12.parquet']
 
 local_dir = '/tmp/parquet_files'
 bucket_name = 'nyc-taxis-traffic-analysis-raw'
@@ -10,9 +12,9 @@ bucket_name = 'nyc-taxis-traffic-analysis-raw'
 os.makedirs(local_dir, exist_ok=True)
 s3 = boto3.client(
     "s3"
-    #,aws_access_key_id="XXX",
-    #aws_secret_access_key="XXX",
-    #region_name="eu-north-1"
+    ,aws_access_key_id="XXX",
+    aws_secret_access_key="XXX",
+    region_name="eu-north-1"
 )
 
 for url in urls:
@@ -26,3 +28,4 @@ for url in urls:
                 f.write(chunk)
     
     s3.upload_file(local_path, bucket_name, s3_key)
+
