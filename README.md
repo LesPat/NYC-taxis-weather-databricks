@@ -35,3 +35,13 @@ Business metrics ideas:
 - weather vs distance
 - time of day vs tips
 - ride duration vs tips
+
+Gold layer ideas:
+gold.daily_metrics: summarized by date
+gold.hourly_metrics: summarized by hour
+gold.fact_trips: fact table ready for BI
+gold.dim_weather: weather dimension
+gold.top_routes: most common trip routes
+gold.weather_impact: analysis of weather on taxi demand
+gold.trip_profitability: profitability per route/time/weather
+gold.demand_features: ML features
