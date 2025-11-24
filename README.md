@@ -25,7 +25,7 @@ Silver layer transformations and result tables:
 - Joining NYC fares data with weather (date_trunc to full hours = hourly weather data)
 - Adding full area names for analysis
 
-Gold layer business-ready tables:\
+Gold layer business-ready tables:
 - gold.daily_metrics: summarized by date
 - gold.hourly_metrics: summarized by hour
 - gold.fact_trips: fact table ready for BI
