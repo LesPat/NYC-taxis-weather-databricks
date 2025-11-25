@@ -24,6 +24,8 @@ Silver layer transformations and result tables:
 - Deleting records with irrelevant data (dates out of scope)
 - Joining NYC fares data with weather (date_trunc to full hours = hourly weather data)
 - Adding full area names for analysis
+Tables:
+- silver_nyc_taxis_weather_oct_dec - joined and cleaned table containing all taxi fares with weather
 
 Gold layer business-ready tables:
 - gold.daily_metrics: summarized by date
