@@ -6,7 +6,7 @@ Architecture consists of three layers: Bronze (Staging) -> Silver (Transformatio
 
 Python -> S3 -> Databricks -> S3 / PowerBI
 
-<img width="895" height="368" alt="taxis_architecture_draft drawio" src="https://github.com/user-attachments/assets/8379ee33-bbe3-44fd-a124-cb5f1e127d35" />
+<img width="914" height="368" alt="taxis_architecture_v3 drawio" src="https://github.com/user-attachments/assets/5e6cea2e-7cda-430b-ba80-73397c01d2f5" />
 
 References:
 NYC yellow taxis data: https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page
