@@ -21,6 +21,7 @@ data = data.reset_index()
 csv_buffer = StringIO()
 data.to_csv(csv_buffer, index=False)
 
+#Access keys deleted due to security concern (problem with OS env paths forced me to insert those manually)
 s3 = boto3.client(
     "s3"
     #,aws_access_key_id="XXX",
@@ -28,7 +29,7 @@ s3 = boto3.client(
     #region_name="eu-north-1"
 )
 
-# Upload
+# Upload to AWS S3 bucket
 s3.put_object(
     Bucket="nyc-taxis-traffic-analysis-raw",
     Key="weather/nyc_weather_oct_dec_2024_v2.csv",
