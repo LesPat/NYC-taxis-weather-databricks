@@ -28,7 +28,12 @@ Tables:
 - silver_nyc_taxis_weather_oct_dec - joined and cleaned table containing all taxi fares with weather
 
 Gold layer business-ready tables:
-- gold.daily_metrics: summarized by date -> metrics: avg(duration, tip, total), count(*), min(duration, tip, total), max(duration, tip, total)
+- #gold.daily_metrics: grouped by date -> metrics:
+   +total(avg, min, max, sum)
+   +fare(avg, min, max, sum)
+   +tips(avg, min, max, sum) 
+   +duration (avg, min, max)
+   +weather(avg rain, total rain, avg temp, avg wind)
 - gold.hourly_metrics: summarized by hour -> avg(duration, tip, total), count(*), min(duration, tip, total), max(duration, tip, total), dayofweek
 - gold.dayofweek_metrics: summarized by hour -> avg(duration, tip, total), count(*), min(duration, tip, total), max(duration, tip, total)
 - gold.fact_trips: fact table ready for BI -> literally silver OBT table (raw table with infinite possibilities) with cleaned and curated data +
