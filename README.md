@@ -47,6 +47,7 @@ Gold layer business-ready tables:
    +tips(avg, min, max, sum) 
    +duration (avg, min, max)
 - gold.weather_impact: analysis of weather on taxi demand ->
+   +fares count
    +total(avg, min, max, sum)
    +fare(avg, min, max, sum)
    +tips(avg, min, max, sum) 
