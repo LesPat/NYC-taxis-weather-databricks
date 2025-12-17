@@ -28,24 +28,28 @@ Tables:
 - silver_nyc_taxis_weather_oct_dec - joined and cleaned table containing all taxi fares with weather with unified naming and added 'technical' columns for aggregations
 
 Gold layer business-ready tables:
-- gold.fact_trips: fact table ready for BI -> literally silver OBT table (raw table with infinite possibilities) with cleaned and curated data +
+- gold.fact_trips: fact table ready for BI -> literally silver OBT table (raw table with infinite possibilities) with cleaned and curated data
+  
 - gold.daily_metrics: grouped by date -> metrics:
    +total(avg, min, max, sum)
    +fare(avg, min, max, sum)
    +tips(avg, min, max, sum) 
    +duration (avg, min, max)
    +weather(avg rain, total rain, avg temp, avg wind)
+  
 - gold.hourly_metrics: grouped by hour -> metrics:
    +total(avg, min, max, sum)
    +fare(avg, min, max, sum)
    +tips(avg, min, max, sum) 
    +duration (avg, min, max)
    +weather(avg rain, total rain, avg temp, avg wind)
+  
 - gold.dayofweek_metrics: summarized by day of week -> 
    +total(avg, min, max, sum)
    +fare(avg, min, max, sum)
    +tips(avg, min, max, sum) 
    +duration (avg, min, max)
+  
 - gold.weather_impact: analysis of weather on taxi demand ->
    +fares count
    +total(avg, min, max, sum)
@@ -53,5 +57,9 @@ Gold layer business-ready tables:
    +tips(avg, min, max, sum) 
    +duration (avg, min, max)
   
-- gold.top_routes: most common trip routes -> top 100 routes, top pickup/dropoff point
-- gold.trip_profitability: profitability per route/time/weather -> profitability per route, profitability per hour, profitability per weather
+- gold.top_routes: grouped by top routes (sorted by count) -> metrics:
+   +total(avg, min, max, sum)
+   +fare(avg, min, max, sum)
+   +tips(avg, min, max, sum) 
+   +duration (avg, min, max)
+   +profitability (total/duration)
