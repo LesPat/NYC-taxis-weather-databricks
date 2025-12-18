@@ -1,4 +1,4 @@
-Project description: Medallion-based architecture data warehouse with data ingestion handled with python by calling NYC yellow taxis free API and meteostat hourly collected weather data for the same period as NYC taxis.
+Project description: Medallion architecture data warehouse with data ingestion handled with python by calling NYC yellow taxis free API and meteostat hourly collected weather data for the same period as NYC taxis. Data uploaded to Amazin S3
 
 Techstack: AWS S3, Python, API, Databricks (PySpark, SQL), PowerBI
 
