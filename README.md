@@ -63,3 +63,6 @@ Gold layer business-ready tables:
    +tips(avg, min, max, sum) 
    +duration (avg, min, max)
    +profitability (total/duration)
+
+  In order to upload result tables into Power BI dashboards databricks <> Power BI connection is needed:
+  - Incompatibile format for iOS (solution needed)
