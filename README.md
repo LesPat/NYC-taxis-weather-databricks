@@ -56,6 +56,7 @@ Gold layer business-ready tables:
    +fare(avg, min, max, sum)
    +tips(avg, min, max, sum) 
    +duration (avg, min, max)
+   +profitability (total/duration)
   
 - gold.top_routes: grouped by top routes (sorted by count) -> metrics:
    +total(avg, min, max, sum)
@@ -66,3 +67,4 @@ Gold layer business-ready tables:
 
   In order to upload result tables into Power BI dashboards databricks <> Power BI connection is needed:
   - Incompatibile format for iOS (solution needed)
+  - 
