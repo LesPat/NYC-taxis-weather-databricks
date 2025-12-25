@@ -26,7 +26,7 @@ s3 = boto3.client(
     "s3"
     #,aws_access_key_id="XXX",
     #aws_secret_access_key="XXX",
-    #region_name="eu-north-1"
+    region_name="eu-north-1"
 )
 
 # Upload to AWS S3 bucket
