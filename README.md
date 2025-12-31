@@ -69,7 +69,3 @@ Gold layer business-ready tables and/or views:
    +duration (avg, min, max)
    +profitability (total/duration, total/distance)
    +distance (avg, min, max)
-
-  In order to upload result tables into Power BI dashboards databricks <> Power BI connection is needed:
-  - Incompatibile format for iOS (solution needed)
-  - Databricks native dashboards are sufficient for the analytical purpose
