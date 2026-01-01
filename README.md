@@ -6,7 +6,7 @@ Architecture consists of three layers: Bronze (raw_data ingested from the S3 buc
 
 Python -> S3 -> Databricks -> Databricks Dashboards
 
-<img width="914" height="368" alt="taxis_architecture_v3 drawio" src="https://github.com/user-attachments/assets/5e6cea2e-7cda-430b-ba80-73397c01d2f5" />
+![taxis_architecture_draft_v2](https://github.com/user-attachments/assets/b7f27286-177e-4bc5-8c32-91ad5b342cde)
 
 References:
 NYC yellow taxis data: https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page
