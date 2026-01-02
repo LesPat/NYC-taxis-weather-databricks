@@ -69,3 +69,5 @@ Gold layer business-ready tables and/or views:
    +duration (avg, min, max)
    +profitability (total/duration, total/distance)
    +distance (avg, min, max)
+
+Project is planned to be refactored into Lakeflow Declarative Pipeline and will be archived afterward
