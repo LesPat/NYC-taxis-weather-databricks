@@ -71,3 +71,5 @@ Gold layer business-ready tables and/or views:
    +distance (avg, min, max)
 
 Project is planned to be refactored into Lakeflow Declarative Pipeline and will be archived afterward
+
+Some unecessary columns are to be deleted. Joins being relocated to silver-to-gold step, data cleaning will be applied in bronze-to-silver step
