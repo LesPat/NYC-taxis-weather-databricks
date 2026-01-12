@@ -1,3 +1,4 @@
+#Dictionary for renaming columns in result silver table
 silver_tbl_dict = {
   "tpep_pickup_datetime" : "pickup_datetime",
   "tpep_dropoff_datetime" : "dropoff_datetime",
