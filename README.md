@@ -72,4 +72,4 @@ Gold layer business-ready tables and/or views:
 
 Project is planned to be refactored into Lakeflow Declarative Pipeline and will be archived afterward
 
-Some unecessary columns are to be deleted. Joins being relocated to silver-to-gold step, data cleaning will be applied in bronze-to-silver step. DAB will be leveraged in order to implement CI/CD features
+Some unecessary columns are to be deleted. Joins being relocated to silver-to-gold step, data cleaning will be applied in bronze-to-silver step. DAB will be leveraged in order to implement CI/CD features. Synthetic data generator will be implemented in order to test AutoLoader capabilities
