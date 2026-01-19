@@ -1,10 +1,10 @@
 Project description: Medallion architecture data warehouse with data ingestion handled with python by calling NYC yellow taxis free API and meteostat hourly collected weather data for the same period as NYC taxis. Data uploaded to Amazin S3
 
-Techstack: AWS S3, Python, API, Databricks (PySpark, SQL, Dashboards)
+Techstack: AWS S3, Python, API, Databricks (PySpark, SQL, DAB, LDP, Jobs)
 
 Architecture consists of three layers: Bronze (raw_data ingested from the S3 bucket) -> Silver (Transformation) -> Gold (Business ready)
 
-Python -> S3 -> Databricks -> Databricks Dashboards
+Python -> S3 -> Databricks
 
 ![taxis_architecture_draft_v2](https://github.com/user-attachments/assets/b7f27286-177e-4bc5-8c32-91ad5b342cde)
 
