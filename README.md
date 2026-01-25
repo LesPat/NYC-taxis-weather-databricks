@@ -25,7 +25,7 @@ Silver layer transformations and result tables:
 - Joining NYC fares data with weather (date_trunc to full hours = hourly weather data)
 - Adding full area names for analysis.
 Tables:
-- silver_nyc_taxis_weather_oct_dec - joined and cleaned table containing all taxi fares with weather with unified naming and added 'technical' columns for aggregations. Plan to create Airflow orchestrated synthetic data ingestion to hands-on learn about AutoLoader feature
+- silver_nyc_taxis_weather_oct_dec - joined and cleaned table containing all taxi fares with weather with unified naming and added 'technical' columns for aggregations. Plan to create Airflow orchestrated synthetic data ingestion to hands-on learn about AutoLoader feature.
 
 Gold layer business-ready tables and/or views:
 - gold.fact_trips: fact table ready for analysis -> literally silver OBT table (raw table with infinite possibilities) with cleaned and curated bussines-ready data
