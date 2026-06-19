@@ -9,8 +9,8 @@ Python -> S3 -> Databricks
 ![taxis_architecture_draft_v2](https://github.com/user-attachments/assets/b7f27286-177e-4bc5-8c32-91ad5b342cde)
 
 References:
-NYC yellow taxis data: https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page
-Weather data: https://dev.meteostat.net/python/
+- NYC yellow taxis data: https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page
+- Weather data: https://dev.meteostat.net/python/
 
 Bronze layer tables:
 1. bronze_nyc_taxis_oct_dec_2024
