@@ -2,6 +2,7 @@ import requests
 import os
 import boto3
 
+#list of per month data URLs
 urls = ['https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-10.parquet'
         ,'https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-11.parquet'
         ,'https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-12.parquet']
@@ -9,6 +10,7 @@ urls = ['https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-10
 local_dir = '/tmp/parquet_files'
 bucket_name = 'nyc-taxis-traffic-analysis-raw'
 
+#AWS S3 config
 os.makedirs(local_dir, exist_ok=True)
 s3 = boto3.client(
     "s3"
@@ -17,6 +19,7 @@ s3 = boto3.client(
     region_name="eu-north-1"
 )
 
+#for loop going through URLs list
 for url in urls:
     filename = url.split("/")[-1]
     local_path = os.path.join(local_dir, filename)
